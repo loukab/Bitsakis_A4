@@ -52,6 +52,17 @@ public class TicTacToeTests {
 		assertThrows(IllegalArgumentException.class, () -> game.makeMove(9));
 		assertThrows(IllegalArgumentException.class, () -> game.makeMove(100));
 	}
+
+	@Test
+	void CannotMakeMoveOnFull(){
+		TicTacToeGame game = new TicTacToeGame();
+
+		for (int i = 0; i <9; i++){
+			game.makeMove(i);
+		}
+
+		assertThrows(IllegalStateException.class, () -> game.makeMove(0));
+	}
 	
 
 
