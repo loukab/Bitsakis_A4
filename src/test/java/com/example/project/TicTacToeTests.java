@@ -63,6 +63,17 @@ public class TicTacToeTests {
 
 		assertThrows(IllegalStateException.class, () -> game.makeMove(0));
 	}
+
+	@Test
+	void PlayersAltTurns(){
+		TicTacToeGame game = new TicTacToeGame();
+
+		assertEquals('X', game.currentPlayer());
+		game.makeMove(0);
+		assertEquals('O, game.currentPlayer());
+		game.makeMove(1);'
+		assertEqualls('X', game.currentPlayer());)
+	}
 	
 
 
