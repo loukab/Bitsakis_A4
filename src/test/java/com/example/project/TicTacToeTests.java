@@ -43,4 +43,16 @@ public class TicTacToeTests {
 
 	}
 
+
+	/*
+	@Test
+	void CannotMoveOutsideBoard(){
+		TicTacToeGame game = new TicTacToeGame();
+		assertThrows(IllegalArgumentException.class, () game.makeMove(-1));
+		assertThrows(IllegalArgumentException.class, () game.makeMove(9));
+		assertThrows(IllegalArgumentException.class, () game.makeMove(100));
+	}
+	*/
+
+
 }
