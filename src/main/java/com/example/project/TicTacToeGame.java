@@ -23,11 +23,5 @@ public class TicTacToeGame{
 	}
 
 	
-	
-	/* 
-	public int avaliableFieldsNumber(){
-		return 9;
-	}
-	*/
 }
 

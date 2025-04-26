@@ -34,4 +34,12 @@ class TicTacToeTests {
 		assertEquals(8, game.availableFieldsNumber());
 	}
 
+	@Test
+	void CannotMakeMoveOnTakenField(){
+		TicTacToeGame game = new TicTacToeGame();
+		game.makeMove(0);
+		assertThrows(IllegalArgumentException.class, () -> game.makeMove(0));
+
+	}
+
 }
