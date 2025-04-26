@@ -25,7 +25,7 @@ public class TicTacToeGame{
 	}
 */
 	public void makeMove(int fieldNumber) {
-		if (fieldNumber < 0 || fieldNumber >=9){
+		if (fieldNumber < 0 || fieldNumber >= 9) {
 			throw new IllegalArgumentException("Invalid Field Number");
 		}
 
