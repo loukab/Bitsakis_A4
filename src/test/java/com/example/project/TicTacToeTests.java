@@ -11,6 +11,7 @@
 package com.example.project;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.beans.Transient;
 
@@ -19,7 +20,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-class TicTacToeTests {
+public class TicTacToeTests {
 
 	@Test
 	void GameStartBuildNineBoard() {
