@@ -25,14 +25,14 @@ public class TicTacToeTests {
 	@Test
 	void GameStartBuildNineBoard() {
 		TicTacToeGame game = new TicTacToeGame();
-		assertEquals(9, game.availableFieldsNumber());
+		assertEquals(9, game.availableFields());
 	}
 
 	@Test
 	void AvailableFieldsDecreaseAfterMove() {
 		TicTacToeGame game = new TicTacToeGame();
 		game.makeMove(0); // Example move in field 0
-		assertEquals(8, game.availableFieldsNumber());
+		assertEquals(8, game.availableFields());
 	}
 
 	@Test

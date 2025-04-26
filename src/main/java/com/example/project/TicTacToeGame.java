@@ -15,24 +15,23 @@ public class TicTacToeGame{
 	private int availableFields = 9;
 	private boolean[] board = new boolean[9];
 
-	public int availableFieldsNumber(){
+	public int availableFields(){
 		return availableFields;
 	}
 
-	/*
-	public void makeMove(int fieldNumber){
-		availableFields--;
-	}
-*/
 	public void makeMove(int fieldNumber) {
+		
+		if (availableFields == 0){
+			throw new IllegalStateException("No moves left, board full");
+		}
+		
 		if (fieldNumber < 0 || fieldNumber >= 9) {
 			throw new IllegalArgumentException("Invalid Field Number");
 		}
-
+		
 		if (board[fieldNumber]) {
             throw new IllegalArgumentException("Field already taken");
         }
-	
 	
 		board[fieldNumber] = true;
 		availableFields--;
