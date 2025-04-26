@@ -20,9 +20,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 class TicTacToeTests {
 
 	@Test
-	@DisplayName("1 + 1 = 2")
 	void GameStartBuildNineBoard() {
-		TicTacToe game = new TicTacToeGame();
+		TicTacToeGame game = new TicTacToeGame();
 		assertEquals(9, game.avaliableFieldsNumber());
 	}
 
@@ -32,5 +31,5 @@ class TicTacToeTests {
 
 
 
-	
+
 }

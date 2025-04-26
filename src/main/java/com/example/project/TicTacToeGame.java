@@ -10,10 +10,11 @@
 
 package com.example.project;
 
-public class Calculator {
+public class TicTacToeGame{
 
-	public int add(int a, int b) {
-		return a + b;
+	public int avaliableFieldsNumber(){
+		return 9;
 	}
 
 }
+
