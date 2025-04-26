@@ -14,9 +14,14 @@ package com.example.project;
 public class TicTacToeGame{
 	private int availableFields = 9;
 	private boolean[] board = new boolean[9];
+	private char currentPlayer = 'X';
 
 	public int availableFields(){
 		return availableFields;
+	}
+
+	public char currentPlayer(){
+		return currentPlayer;
 	}
 
 	public void makeMove(int fieldNumber) {
@@ -35,5 +40,14 @@ public class TicTacToeGame{
 	
 		board[fieldNumber] = true;
 		availableFields--;
+
+		if(currentPlayer =='X'){
+			currentPlayer = 'O';
+		}
+		else{
+			currentPlayer = 'X';
+		}
 	}
+
+
 }	

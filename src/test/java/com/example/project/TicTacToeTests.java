@@ -70,9 +70,9 @@ public class TicTacToeTests {
 
 		assertEquals('X', game.currentPlayer());
 		game.makeMove(0);
-		assertEquals('O, game.currentPlayer());
-		game.makeMove(1);'
-		assertEqualls('X', game.currentPlayer());)
+		assertEquals('O', game.currentPlayer());
+		game.makeMove(1);
+		assertEquals('X', game.currentPlayer());
 	}
 	
 
