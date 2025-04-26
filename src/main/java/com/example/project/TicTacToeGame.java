@@ -10,11 +10,24 @@
 
 package com.example.project;
 
-public class TicTacToeGame{
 
+public class TicTacToeGame{
+	private int availableFields = 9;
+
+	public int availableFieldsNumber(){
+		return availableFields;
+	}
+
+	public void makeMove(int fieldNumber){
+		availableFields--;
+	}
+
+	
+	
+	/* 
 	public int avaliableFieldsNumber(){
 		return 9;
 	}
-
+	*/
 }
 
